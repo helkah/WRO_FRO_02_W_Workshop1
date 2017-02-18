@@ -220,7 +220,7 @@ article.greaterThenImage{
 /***************SECTION THREE BOXES******************************************/
 section.threeBoxes{
     width: 100%;
-    height: 300px;
+    height: 350px;
     margin-top: 30px;
     background-color: white;
 }
@@ -257,24 +257,27 @@ section.threeBoxes{
 }
 .box3{
     position: relative;
+    border: 1px solid #DBDBDB;
 }
 .box3Text{
     position: absolute;
     top:0;
     left: 5px;
+    padding: 10px;
 }
 .box3TextUnderline{
     position: absolute;
     width: 150px;
     height: 8px;
     background-color: #1DC6A5;
-    top: 20px;
-    left: 5px;
+    top: 30px;
+    left: 15px;
 }
 /********************Sekcja Cennik*****************************/
 /********************Section Tender****************************/
 .tender{
     width: 100%;
+    height: 725px;
     font-size: 0;
     background-color: #F1F1F1;
 }
@@ -282,13 +285,14 @@ h2{
     text-transform: uppercase;
     font-size: 21px;
     position: relative;
+    padding-top: 50px;
 }
 .h2textUnderline{
     width: 320px;
     height: 8px;
     background-color: #1DC6A5; 
     position: absolute;
-    top: 6px;
+    top: 56px;
     left: 0;
 } 
 .frame{
@@ -311,33 +315,33 @@ h2{
     
 }
 .bigWhiteCircle{
-    width: 50px;
-    height: 50px;
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
     background-color:white;    
     border: 2px solid #C2C2C2;
     position: absolute;
-    left:125px;
+    left:130px;
     top:-25px;  
 }
-.greyCircle{    
+.smallGreyCircle{    
     width: 25px;
     height: 25px;
     border-radius: 50%;
     background-color:#C2C2C2;    
     border: 1px solid #C2C2C2;
     position: absolute;
-    left:138px;
-    top:-13px;    
+    left:144px;
+    top:-12px;    
 }
-.aquaCircle{
-    width: 50px;
-    height: 50px;
+.bigAquaCircle{
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
     background-color:#1DC6A5;    
     border: 2px solid #1DC6A5;
     position: absolute;
-    left:125px;
+    left:130px;
     top:-25px;   
 }
 .smallWhiteCircle{
@@ -347,19 +351,20 @@ h2{
     background-color:white;    
     border: 1px solid white;
     position: absolute;
-    left:138px;
-    top:-13px;
+    left:144px;
+    top:-12px;
 }
 .text{
     text-align: center;
     padding: 50px;
     font-size: 22px;
     text-transform: uppercase;
+    font-family: 'ralewaymedium', Arial, sans-serif;
 }
 .text div{
     width: 120px;
     height: 120px;
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
     border: 2px solid #C2C2C2;
     border-radius: 50%;
     background-color: white;
@@ -433,7 +438,10 @@ h2{
     display: inline-block;
     
 }
-/***********************FORMULARZ********************************/
+/***********************SECTION FORM********************************/
+form{
+    margin-top: 50px;
+}
 fieldset{
     display: inline-block;
     border-style: none;
@@ -445,26 +453,32 @@ fieldset{
     font-family: 'ralewayextralight', Arial, sans-serif;
     padding: 10px;
     border: 1px solid #1DC6A5;
-    width: 600px;
+    width: 630px;
     resize: none;
 }
 fieldset.rightBox{
-    margin-left: 50px;
     position: relative;
+    height: 500px;
 }
 .rightBox img{
     position: absolute;
     top: -313px;
+    right: -30px;
+}
+.checkBoxWrapperForPositioning{
+    position: absolute;
+    top: -80px;
+    left: 60px;
 }
 .checkBoxWrapper{
 	position: relative;
-	height: 35px;
-    width: 35px;
+	height: 45px;
+    width: 45px;
     border: 1px solid #1DC6A5;
 }
 input[type="checkbox"]{
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     opacity: .0;
     position: absolute;
     top: 0;
@@ -475,8 +489,8 @@ input[type="checkbox"]{
 input[type="checkbox"]:checked + label{
     background-image: url(../images/form_ok.jpg);
     background-size: cover;
-    height: 30px;
-    width: 30px;
+    height: 38px;
+    width: 38px;
     position: absolute;
     top: 0;
     left: 0;
@@ -491,12 +505,19 @@ input[type="submit"]{
     padding: 10px 100px;
     border: 1px solid #1DC6A5;
     border-radius: 10px;
-    border
     outline: none;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
     
 }
-.rightBox .checkBoxWrapper, .rightBox p{
-    display: inline-block;
+.rightBox p{
+    font-size: 19px;
+    color: #9A9A9A;
+    position: absolute;
+    top: -99px;
+    left: 130px;
+    width: 280px;
 }
 /***************************FOOTER*****************************/
 footer{
